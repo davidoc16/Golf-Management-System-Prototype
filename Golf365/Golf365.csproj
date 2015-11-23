@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62EAD7C1-E656-49EA-825C-4B34A75CAEB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Golf365</RootNamespace>
+    <AssemblyName>Golf365</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLstFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLstFee.Designer.cs">
+      <DependentUpon>frmLstFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemAnl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemAnl.Designer.cs">
+      <DependentUpon>frmMemAnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRnlNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRnlNot.Designer.cs">
+      <DependentUpon>frmRnlNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRcdPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRcdPay.Designer.cs">
+      <DependentUpon>frmRcdPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemInv.Designer.cs">
+      <DependentUpon>frmMemInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLstMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLstMem.Designer.cs">
+      <DependentUpon>frmLstMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmdMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmdMem.Designer.cs">
+      <DependentUpon>frmAmdMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegMem.Designer.cs">
+      <DependentUpon>frmRegMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemTypeChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemTypeChange.Designer.cs">
+      <DependentUpon>frmMemTypeChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemTypeCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemTypeCreate.Designer.cs">
+      <DependentUpon>frmMemTypeCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeReg.Designer.cs">
+      <DependentUpon>frmDeReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInAnl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInAnl.Designer.cs">
+      <DependentUpon>frmInAnl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLstFee.resx">
+      <DependentUpon>frmLstFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemAnl.resx">
+      <DependentUpon>frmMemAnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRnlNot.resx">
+      <DependentUpon>frmRnlNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRcdPay.resx">
+      <DependentUpon>frmRcdPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemInv.resx">
+      <DependentUpon>frmMemInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLstMem.resx">
+      <DependentUpon>frmLstMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmdMem.resx">
+      <DependentUpon>frmAmdMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegMem.resx">
+      <DependentUpon>frmRegMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemTypeChange.resx">
+      <DependentUpon>frmMemTypeChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemTypeCreate.resx">
+      <DependentUpon>frmMemTypeCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeReg.resx">
+      <DependentUpon>frmDeReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInAnl.resx">
+      <DependentUpon>frmInAnl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
